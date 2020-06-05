@@ -1,7 +1,7 @@
 import openpyxl
 
 wb = openpyxl.load_workbook("example.xlsx")
-sheet = wb.get_active_sheet()
+sheet = wb.active
 sheet.title = "Spam Spam Spam"
-print(wb.get_sheet_names())
+print(wb.sheetnames)
 wb.save("example_copy.xlsx")

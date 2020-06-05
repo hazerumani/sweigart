@@ -1,7 +1,7 @@
 import openpyxl
 
 wb = openpyxl.Workbook()
-sheet = wb.get_active_sheet()
+sheet = wb.active
 sheet["A1"] = "Tall row"
 sheet["B2"] = "Wide column"
 sheet.row_dimensions[1].height = 70
